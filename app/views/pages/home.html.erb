@@ -1,0 +1,29 @@
+<div id='gallery'>
+  <% @page.images.each do |i| %>
+    <%= image_tag(i.thumbnail("700x500").url) %>
+  <% end %>
+  <div class="slidetabs">
+    <% @page.images.each do |i| %>
+      <a href="#"></a>
+    <% end %>
+  </div>
+</div>
+
+<script type="text/javascript">
+  $(".slidetabs").tabs("#gallery > img", {
+	  effect: 'fade',
+	  fadeOutSpeed: "slow",
+	  rotate: true
+  }).slideshow({
+    autoplay: true,
+    interval:6000
+  });
+</script>
+<div>
+  <%=raw @page.content_for(:body) %>
+</div>
+
+<div>
+  <%=raw @page.content_for(:side_body) %>
+</div>
+
