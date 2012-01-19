@@ -26,6 +26,8 @@ abbr,acronym {border:0;}
   padding:5px 10px;
 }
 #nav li ul{position:absolute; left:-9999px}
+#nav li ul a{background:#ccc;}
+#nav li ul a:hover{background:#eee;}
 #nav li ul li{float:none; width:200px;}
 #nav li:hover ul{left:auto}
 
