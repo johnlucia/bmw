@@ -1,0 +1,2 @@
+EY_PASSWORD = 'cuUw46PtjpSW'
+DBPASS = '' 
