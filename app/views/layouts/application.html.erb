@@ -14,8 +14,9 @@
 <body>
   <div id="wrapper">
     <div id="header">
-      <%= render :partial => 'shared/menu', :locals => {:menu_levels => 0, :dom_id => 'nav' } %>
+      
     </div>
+    <%= render :partial => 'shared/menu', :locals => {:menu_levels => 0, :dom_id => 'nav' } %>
     <div id="content">
       <%= yield %>
     </div>
