@@ -8,7 +8,6 @@
     <% end %>
   </div>
 </div>
-
 <script type="text/javascript">
   $(".slidetabs").tabs("#gallery > img", {
 	  effect: 'fade',
@@ -19,11 +18,11 @@
     interval:6000
   });
 </script>
-<div>
+<div id="main">
   <%=raw @page.content_for(:body) %>
 </div>
 
-<div>
+<div id="side">
   <%=raw @page.content_for(:side_body) %>
 </div>
 
