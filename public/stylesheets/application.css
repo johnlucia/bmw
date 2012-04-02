@@ -13,7 +13,12 @@ abbr,acronym {border:0;}
 body{
   font-size:14px;
   font-family:Arial, “Helvetica Neue”, Helvetica, sans-serif;
-  background: url(/images/bg_body2.png) no-repeat, url(/images/bg_body.png) repeat;
+  background:#3d1a22;
+  background-image: -webkit-linear-gradient(left, #3d1a22 3%, #471f29 50%, #3d1a22 95%);
+  background-image: -moz-linear-gradient(left, #3d1a22 3%, #471f29 50%, #3d1a22 95%);
+  background-image: -ms-linear-gradient(left, #3d1a22 3%, #471f29 50%, #3d1a22 95%);
+  background-image: -o-linear-gradient(left, #3d1a22 3%, #471f29 50%, #3d1a22 95%);
+  background-image: linear-gradient(left, #3d1a22 3%, #471f29 50%, #3d1a22 95%);
 }
 
 h1,h2,h3,
@@ -40,6 +45,7 @@ a:hover{text-decoration:underline;}
   width:967px;
   margin:0 auto;
   background:#fff;
+  
   -webkit-border-radius:15px;
   -moz-border-radius:15px;
   border-radius:15px;
@@ -61,12 +67,14 @@ a:hover{text-decoration:underline;}
 #nav{
   position:relative; 
   float:left; z-index:500; 
-  background-color:#850037; 
+  background-color:#666; 
   width:100%;
-  -moz-box-shadow:0 2px 4px 0 #000;
-  -webkit-box-shadow:0 2px 4px 0 #000;
-  box-shadow:0 2px 4px 0 #000;
+  text-transform:uppercase;
+  -moz-box-shadow:0 2px 4px -1px #000;
+  -webkit-box-shadow:0 2px 4px -1px #000;
+  box-shadow:0 2px 4px -1px #000;
 }
+#nav ul{width:auto; margin:0 auto;}
 #nav li{
   float:left;
   position:relative;
@@ -74,18 +82,30 @@ a:hover{text-decoration:underline;}
 #nav li a{
   display:block;
   color:#fff;
-  font-size:1.2em;
-  padding:.6em 2em;
+  font-size:20px;
+  font-weight:bold;
+  padding:.3em 1.4em .2em 1.4em;
+  font-family: "Hoefler Text", "Baskerville old face", Garamond, "Times New Roman", serif;
 }
-#nav li a:hover{text-decoration:none;}
+#nav li a:hover{
+  text-decoration:none;
+  
+  background-image:-webkit-linear-gradient(top, #777, #333);
+}
 #nav li ul{position:absolute; left:-9999px}
-#nav li ul a{background:#66002A; font-size:1em;}
+#nav li ul a{background:#66002A; font-size:1em; text-transform:none;}
 #nav li ul a:hover{background:#520022;}
 #nav li ul li{float:none; width:200px; border-top:1px solid #290011;}
 #nav li:hover ul{left:auto}
 
 /* Homepage Slideshow */
-#gallery{position:relative; width:967px; height:250px; overflow:hidden; clear:both;}
+#gallery{
+  position:relative; 
+  width:967px; height:250px; 
+  overflow:hidden; 
+  clear:both; 
+  border-bottom:14px solid #666;
+}
 #gallery img{width:967px; height:250px; position:absolute;}
 .slidetabs{position:absolute; bottom:0; left:0;}
 .slidetabs a{
