@@ -68,31 +68,29 @@ a:hover{text-decoration:underline;}
   position:relative; 
   float:left; z-index:500; 
   background-color:#666; 
-  width:100%;
+  width:100%; height:auto;
   text-transform:uppercase;
+  text-align:center;
+  line-height:1em;
   -moz-box-shadow:0 2px 4px -1px #000;
   -webkit-box-shadow:0 2px 4px -1px #000;
   box-shadow:0 2px 4px -1px #000;
 }
-#nav ul{width:auto; margin:0 auto;}
-#nav li{
-  float:left;
-  position:relative;
-}
+#nav ul{display:inline-block; position:relative; height:2em;}
+#nav li{float:left; position:relative;}
 #nav li a{
   display:block;
   color:#fff;
   font-size:20px;
   font-weight:bold;
-  padding:.3em .2em .2em .2em;
+  padding:.4em 1em .4em 1em;
   font-family: "Hoefler Text", "Baskerville old face", Garamond, "Times New Roman", serif;
 }
 #nav li a:hover{
   text-decoration:none;
-  
   background-image:-webkit-linear-gradient(top, #777, #333);
 }
-#nav li ul{position:absolute; left:-9999px}
+#nav li ul{position:absolute; display:block; left:-9999px}
 #nav li ul a{background:#66002A; font-size:1em; text-transform:none;}
 #nav li ul a:hover{background:#520022;}
 #nav li ul li{float:none; width:200px; border-top:1px solid #290011;}
