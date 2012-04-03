@@ -21,8 +21,12 @@
 <div id="main">
   <%=raw @page.content_for(:body) %>
 </div>
-
+<a href="#" id="scheduleButton">Schedule Now!</a>
 <div id="side">
-  <%=raw @page.content_for(:side_body) %>
+  <h2>Location</h2>
+  <%= custom_value("Street Address") %>
+  <h2>Contact</h2>
+  <%= custom_value("Phone Number") %>
+  <%# =raw @page.content_for(:side_body) %>
 </div>
 
