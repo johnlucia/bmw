@@ -1,0 +1,6 @@
+body.modal{
+  background:#eee;
+  padding:0 15px;
+}
+
+body.modal label{display:block; padding-top:10px;}

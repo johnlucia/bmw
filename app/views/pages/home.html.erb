@@ -20,11 +20,6 @@
 </script>
 <div id="main">
   <%=raw @page.content_for(:body) %>
-  <a href="http://static.ddmcdn.com/gif/great-white-shark-1.jpg" rel="shadowbox">gigedy</a><br />
-  <a href="/contact" rel="shadowbox">contact</a>
-  <%= link_to("fucker", :controller => 'inquiries', :action => 'new', :layout => 'modal') %>
-
-  
 </div>
 <a href="#" id="scheduleButton">Schedule Now!</a>
 <div id="side">
@@ -32,6 +27,11 @@
   <%= custom_value("Street Address") %>
   <h2>Contact</h2>
   <%= custom_value("Phone Number") %>
+  <%= 
+    link_to("Email Us", {:controller => 'inquiries', :action => 'new'}, 
+            :rel => "shadowbox;width=500;height=600;title=Email Us") 
+  %>
+
   <%# =raw @page.content_for(:side_body) %>
 </div>
 
