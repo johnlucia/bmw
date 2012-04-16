@@ -1,3 +1,4 @@
+<div id="main"
 <% content_for :body_content_left do %>
   <div id="show_blog_post">
     <%= render 'post' %>
@@ -46,7 +47,7 @@
     </aside>
   <% end %>
 <% end %>
-
+</div>
 <% content_for :body_content_right do %>
   <%= render :partial => "/blog/shared/categories" %>
   <%= render :partial => "/blog/shared/tags" %>
