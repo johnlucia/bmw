@@ -16,7 +16,7 @@
     Shadowbox.init();
   </script>
 </head>
-<body>
+<body class="<%= controller.action_name %>">
   <div id="wrapper">
     <div id="header">
       
@@ -26,9 +26,10 @@
       <%= yield %>
     </div>
     <div class="clear"></div>
-    <div id="footer">
-    
-    </div>
+  </div>
+  <div id="footer">
+    <p>Justine Lucia | Licensed Massage Therapist - Oregon License #123456 | Nutritional Therapy Practitioner | Yoga Alliance Registered Yoga Teacher</p>
+    <p><%= controller.action_name %></p>
   </div>
 </body>
 </html>

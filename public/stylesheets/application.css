@@ -38,7 +38,8 @@ h6{font-size:90%}
 
 p{padding:5px 0; line-height:1.7em;}
 
-a{text-decoration:none;}
+a{color:#6e1f33; text-decoration:none;}
+p a{font-weight:bold;}
 a:hover{text-decoration:underline;}
 
 .clear{clear:both;}
@@ -67,9 +68,22 @@ a:hover{text-decoration:underline;}
 #content{
   clear:both;
   float:left;
-  background:#d8d8d8;  
+  background:#d8d8d8; 
+  background:#fff;  
+  padding-bottom:20px;
+  width:100%;
+  
+  -webkit-border-radius:0 0 15px 15px;
+  -moz-border-radius:0 0 15px 15px;
+  border-radius:0 0 15px 15px;
 }
-#footer{}
+#footer{
+  width:967px;
+  margin:0 auto;
+  color:#fff; 
+  font-size:80%;
+  text-align:center;
+}
 /* xxxxxxxxxxx */
 
 /* Navigation */
@@ -133,7 +147,8 @@ a:hover{text-decoration:underline;}
 .slidetabs a.current{background:#888;}
 
 /* Content */
-#main{
+#main,
+#mainFull{
   width:522px;
   float:left;
   padding:0 0 50px 50px;
@@ -151,18 +166,24 @@ a:hover{text-decoration:underline;}
   padding:.5em 0;
   text-align:center;
   background:blue;
+  letter-spacing:4px;
   -moz-border-radius:10px;
   border-radius:10px;
+  
+  -moz-box-shadow:2px 2px 6px #888;
+  -webkit-box-shadow:2px 2px 6px #888;
+  box-shadow:2px 2px 6px #888;
   
 }
 #side{
   float:right;
   clear:right;
   margin:0 20px 0 0;
-  padding:20px;
-  width:288px;
-  background:#fff;
+  padding:20px 30px;
+  width:268px;
+  background:#d8d8d8; /*#fff;*/
   border:1px solid #a3a3a3;
+  font-size:120%;
   
   -moz-border-radius:10px;
   border-radius:10px;
@@ -173,10 +194,29 @@ a:hover{text-decoration:underline;}
 }
 #side,#side h2,#side h3,#side h4{
   font-family:"Hoefler Text", "Baskerville old face", Garamond, "Times New Roman", serif;
+}
+#side h2,#side h3,#side h4{
+  letter-spacing:3px;
   font-weight:bold;  
 }
-#side p{line-height:1.2em; font-weight:normal;}
+#side p{line-height:1.2em;}
 #content ul{
   list-style-type:disc;
   padding:3px 0 5px 20px;
 }
+
+/* Interior Pages */
+
+.show #scheduleButton{margin-top:30px;}
+.show #main, .show #mainFull{padding-top:30px;}
+.show #mainFull{width:863px;}
+.show #side{padding:15px 30px;}
+#side img{
+ width:268px;
+ margin:15px 0;
+ border:1px solid #a3a3a3;
+ -moz-border-radius:4px;
+  border-radius:4px;
+}
+
+

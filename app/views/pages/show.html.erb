@@ -1,7 +1,10 @@
-<div>
+<div id="main<%= 'Full' if !right_column %>">
   <%=raw @page.content_for(:body) %>
 </div>
-
-<div>
-  <%=raw @page.content_for(:side_body) %>
-</div>
+<% if right_column %>
+  <a href="#" id="scheduleButton">Schedule Now!</a>
+  <div id="side">
+    <%= side_images %>
+    <%=raw @page.content_for(:side_body) %>
+  </div>
+<% end %>
