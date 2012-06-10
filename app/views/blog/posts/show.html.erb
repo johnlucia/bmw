@@ -48,11 +48,13 @@
 <% end %>
 
 <% content_for :body_content_right do %>
+  <div id="side">
   <%= render :partial => "/blog/shared/categories" %>
   <%= render :partial => "/blog/shared/tags" %>
   <%= render :partial => "/blog/shared/posts" %>
   <%= render :partial => "/blog/shared/rss_feed" %>
   <%= blog_archive_list %>
+  </div>
 <% end %>
 
 <%= render :partial => "/shared/content_page", :locals => { :remove_automatic_sections => true }  %>
