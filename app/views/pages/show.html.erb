@@ -1,5 +1,6 @@
 <div id="main<%= 'Full' if !right_column %>">
   <%=raw @page.content_for(:body) %>
+  <%= extra_content %>
 </div>
 <% if right_column %>
   <a href="#" id="scheduleButton">Schedule Now!</a>

@@ -1,0 +1,31 @@
+<div id="map_canvas" style="width:500px; height:400px; background:#eee;"></div>
+    
+<script type="text/javascript">
+  
+  function initialize() {
+    var officeLoc = new google.maps.LatLng(44.059716, -121.313932);    
+  
+    var myOptions = {
+    zoom: 15,
+    center: officeLoc,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+  var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+  var marker = new google.maps.Marker({
+      position: officeLoc,
+      map: map,
+      title:"Across the street from The Pine Tavern, upstairs."
+  });
+  }
+
+  function loadScript() {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "http://maps.googleapis.com/maps/api/js?sensor=true&callback=initialize";
+    document.body.appendChild(script);
+  }
+
+  window.onload = loadScript;
+</script>
+  
+

@@ -14,7 +14,7 @@
   <script type="text/javascript" src="/shadowbox/shadowbox.js"></script>
   <script type="text/javascript">
     Shadowbox.init();
-  </script>
+  </script>  
 </head>
 <body class="<%= controller.controller_name %> <%= controller.action_name %>">
   <div id="wrapper">
@@ -28,7 +28,7 @@
     <div class="clear"></div>
   </div>
   <div id="footer">
-    <p>Justine Lucia | Licensed Massage Therapist - Oregon License #123456 | Nutritional Therapy Practitioner | Yoga Alliance Registered Yoga Teacher</p>
+    <p><%= custom_value("Footer Text") %></p>
     <p><%= controller.controller_name %> : <%= controller.action_name %></p>
   </div>
 </body>
