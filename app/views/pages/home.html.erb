@@ -23,14 +23,6 @@
 </div>
 <a href="#" id="scheduleButton">Schedule Now!</a>
 <div id="side">
-  <h2>Location</h2>
-  <%= custom_value("Street Address") %><br />
-  <%= custom_value("City") %>, <%= custom_value("State") %> <%= custom_value("Zip") %>
-  <h2>Contact</h2>
-  <%= custom_value("Phone Number") %><br />
-  <%= 
-    link_to("Email Us", {:controller => 'inquiries', :action => 'new'}, 
-            :rel => "shadowbox;width=500;height=600;title=Email Us") 
-  %>
+  <%= render :partial => "contact_info" %>
 </div>
 
