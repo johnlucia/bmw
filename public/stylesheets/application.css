@@ -155,7 +155,7 @@ a:hover{text-decoration:underline;}
 }
 #scheduleButton{
   display:block;
-  width:336px; height:63px;
+  width:336px; height:60px;
   margin:20px 15px 20px 0;
   background:url("/images/sched_button.png");
   float:right;
@@ -163,7 +163,7 @@ a:hover{text-decoration:underline;}
   text-indent:-9999px;
 }
 
-#scheduleButton:hover{background-position:0 -63px;}
+#scheduleButton:hover{background-position:0 -60px;}
 /*
 #scheduleButton{
   display:block;
