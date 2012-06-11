@@ -126,6 +126,7 @@ a:hover{text-decoration:underline;}
   overflow:hidden; 
   clear:both; 
   border-bottom:14px solid #651126;
+  background:#222;
 }
 #gallery img{width:967px; height:250px; position:absolute;}
 .slidetabs{
