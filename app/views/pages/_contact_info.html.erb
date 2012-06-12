@@ -1,9 +1,14 @@
 <h2>Location</h2>
-  <%= custom_value("Street Address") %><br />
-  <%= custom_value("City") %>, <%= custom_value("State") %> <%= custom_value("Zip") %>
-  <h2>Contact</h2>
-  <%= custom_value("Phone Number") %><br />
-  <%= 
-    link_to("Email Us", {:controller => 'inquiries', :action => 'new'}, 
-            :rel => "shadowbox;width=500;height=600;title=Email Us") 
-  %>
+  <div class="vcard">
+    <div class="fn org"><%= custom_value("Business Name") %></div>
+    <div class="adr">
+      <div class="street-address"><%= custom_value("Street Address") %></div>
+      <span class="locality"><%= custom_value("City") %><span>, <abbr class="region" title="state"><%= custom_value("State") %></abbr> <span class="postal-code"><%= custom_value("Zip") %></span>
+    </div>
+  </div>
+<h2>Contact</h2>
+<div class="tel"><%= custom_value("Phone Number") %></div>
+<%= 
+  link_to("Email Us", {:controller => 'inquiries', :action => 'new'}, 
+          :rel => "shadowbox;width=500;height=600;title=Email Us") 
+%>
