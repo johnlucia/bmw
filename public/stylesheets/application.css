@@ -190,7 +190,8 @@ a:hover{text-decoration:underline;}
 }
 #side h2,#side h3,#side h4{
   letter-spacing:3px;
-  font-weight:bold;  
+  font-weight:bold; 
+  padding:15px 0 7px 0; 
 }
 #side p{line-height:1.2em;}
 #content ul{
