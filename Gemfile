@@ -20,6 +20,8 @@ gem 'pg'
 # Bundle the extra gems:
 # gem 'bj'
 # gem 'nokogiri'
+# uncomment the line below to run heroku db:pull
+# gem 'sqlite3' 
 # gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'aws-s3', :require => 'aws/s3'
 
