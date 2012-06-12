@@ -3,7 +3,7 @@
   <%= extra_content %>
 </div>
 <% if right_column %>
-  <a href="#" id="scheduleButton">Schedule Now!</a>
+  <%= render :partial => "schedule_button" %>
   <div id="side">
     <%= side_images %>
     <%=raw @page.content_for(:side_body) %>
