@@ -109,6 +109,7 @@ a:hover{text-decoration:underline;}
 }
 #nav li a:hover{
   text-decoration:none;
+  background-color:#B82147;
   background-image:-webkit-linear-gradient(bottom, #B82147, #470B1A);
   background-image:-moz-linear-gradient(bottom, #B82147, #470B1A);
   background-image:-ms-linear-gradient(bottom, #B82147, #470B1A);
