@@ -1,4 +1,4 @@
-<% content_for :body_content_title, @category.title %>
+<% content_for :body_content_title, "#{t('.posts_tagged')} &#8220;#{@tag_name.titleize}&#8221;".html_safe -%>
 
 <% content_for :body_content_left do %>
   <% if @blog_posts.any? %>
@@ -7,16 +7,17 @@
       <%= will_paginate @blog_posts %>
     </section>
   <% else %>
-    <p>
-      <%= t('.no_posts') %>
-    </p>
+    <p><%= t('.no_blog_articles_yet') %></p>
   <% end %>
 <% end %>
 
 <% content_for :body_content_right do %>
   <div id="side">
     <%= render :partial => "/blog/shared/categories" %>
-   </div>
+    <%= render :partial => "/blog/shared/tags" %>
+    <%= render :partial => "/blog/shared/rss_feed" %>
+    <%= blog_archive_list %>
+  </div>
 <% end %>
 
 <%= render :partial => "/shared/content_page" %>
