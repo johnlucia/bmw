@@ -10,16 +10,20 @@
   link_to("Email Us", {:controller => 'inquiries', :action => 'new'}, 
           :rel => "shadowbox;width=500;height=600;title=Email Us") 
 %>
+<% unless custom_value("Office Lat").blank? || custom_value("Office Long").blank? %>
 <h2>Our Location:</h2>
 <div id="map_canvas"></div>
     
 <script type="text/javascript">
   
   function initialize() {
-    var officeLoc = new google.maps.LatLng(44.059716, -121.313932);    
+    var officeLoc = new google.maps.LatLng(
+      <%= custom_value("Office Lat") %>, 
+      <%= custom_value("Office Long") %>
+    );    
   
     var myOptions = {
-    zoom: 15,
+    zoom: <%= custom_value("Office Map Zoom") %>,
     center: officeLoc,
     mapTypeId: google.maps.MapTypeId.ROADMAP
     }
@@ -27,7 +31,7 @@
   var marker = new google.maps.Marker({
       position: officeLoc,
       map: map,
-      title:"Across the street from The Pine Tavern, upstairs."
+      title:"Our Location"
   });
   }
 
@@ -40,3 +44,4 @@
 
   window.onload = loadScript;
 </script>
+<% end %>
