@@ -10,5 +10,7 @@
 <div class="tel"><%= custom_value("Phone Number") %></div>
 <%= 
   link_to("Email Us", {:controller => 'inquiries', :action => 'new'}, 
-          :rel => "shadowbox;width=500;height=600;title=Email Us") 
+          :rel => "shadowbox;width=500;height=600;title=Email Us") unless mobile_device?
 %>
+
+<%= mail_to("justine@bendmassageandwellness.com") if mobile_device? %>

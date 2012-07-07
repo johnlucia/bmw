@@ -16,4 +16,8 @@ module ApplicationHelper
   def extra_content
     render :partial => "contact_page" if @page.title.eql?("Contact")
   end
+  
+  def mobile_device?
+    request.user_agent =~ /Mobile|webOS/
+  end
 end
