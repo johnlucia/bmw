@@ -5,7 +5,13 @@ source 'http://rubygems.org'
 # Bundle edg Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'pg'
+# sqlite3 locally, Postgresql on production
+group :development, :test do
+  gem 'sqlite3'
+end
+group :production do
+  gem 'pg'
+end
 
 # Use unicorn as the web server
 # gem 'unicorn'
