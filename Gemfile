@@ -5,6 +5,7 @@ source 'http://rubygems.org'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
+# sqlite3 locally, Postgresql on production
 group :development, :test do
   gem 'sqlite3'
 end
