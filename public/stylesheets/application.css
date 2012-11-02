@@ -214,6 +214,23 @@ a:hover{text-decoration:underline;}
  -moz-border-radius:4px;
   border-radius:4px;
 }
+#socialMediaButtons{margin:15px 0 0 0; padding:11px 0 0 0; border-top:1px solid #888;}
+#side #socialMediaButtons #facebookButton,
+#side #socialMediaButtons #googlePlusButton{
+  width:32px;
+  border:none;
+  margin:0 0 0 0;
+  position:relative;
+  top:5px;
+  
+  -moz-border-radius:0;
+    border-radius:0;
+}
+#side #socialMediaButtons #googlePlusButton{width:25px; top:1px;}
+#socialMediaButtons .fb-like{
+  position:relative; top:-6px;
+  margin:0 8px 0 5px;
+}
 
 /* Blog Stuff */
 
