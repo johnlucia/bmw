@@ -201,6 +201,9 @@ a:hover{text-decoration:underline;}
   padding:3px 0 5px 20px;
 }
 
+img.image-align-left{float:left; margin:10px 15px 3px 0;}
+img.image-align-right{float:right; margin:10px 0 3px 15px;}
+
 /* Interior Pages */
 
 .show #scheduleButton{margin-top:30px;}
