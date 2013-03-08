@@ -1,4 +1,5 @@
-<%= link_to_function('Schedule Now', "popupWindow('http://www.schedulicity.com/Scheduling/Embed/EmbedWrapper.aspx?business=BMWF6L&default=none&popup=1', '500', '674')",  :id => "scheduleButton" ) %>
+<%#= link_to_function('Schedule Now', "popupWindow('http://www.schedulicity.com/Scheduling/Embed/EmbedWrapper.aspx?business=BMWF6L&default=none&popup=1', '500', '674')",  :id => "scheduleButton" ) %>
+<%= link_to('Schedule Now', "http://www.schedulicity.com/Scheduling/Default.aspx?business=BMWF6L",  :id => "scheduleButton", :target => '_blank' ) %>
 
 <script type="text/javascript">
   function popupWindow(sUrl,height,width,scrollbars) {
