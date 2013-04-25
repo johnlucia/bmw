@@ -1,4 +1,7 @@
 Bmw::Application.routes.draw do
+  # 301 redirect
+  # match "/massage", :to => redirect("/massage-in-bend-oregon")
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

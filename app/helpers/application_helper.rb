@@ -20,4 +20,13 @@ module ApplicationHelper
   def mobile_device?
     request.user_agent =~ /Mobile|webOS/
   end
+  
+  def menu_link_title(menu_item)
+    page = Page.find_by_title(menu_item.title)
+    if page.link_text.present?
+      page.link_text
+    else
+      menu_item.title
+    end
+  end
 end
