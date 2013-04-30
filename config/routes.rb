@@ -1,6 +1,16 @@
 Bmw::Application.routes.draw do
+  
   # 301 redirect
   # match "/massage", :to => redirect("/massage-in-bend-oregon")
+  match "/massage/sports-massage", :to => redirect("/massage-bend-oregon/sports-massage")
+  match "/massage/deep-tissue-massage", :to => redirect("/massage-bend-oregon/deep-tissue-massage")
+  match "/massage/relaxation-massage", :to => redirect("/massage-bend-oregon/relaxation-massage")
+  match "/massage/pregnancy-massage", :to => redirect("/massage-bend-oregon/pregnancy-massage")
+  match "/massage/chinese-cupping", :to => redirect("/massage-bend-oregon/chinese-cupping")
+  match "/massage/rates-policies", :to => redirect("/massage-bend-oregon/rates-policies")
+  match "/massage/gift-certificates", :to => redirect("/massage-bend-oregon/gift-certificates")
+  match "/massage", :to => redirect("/massage-bend-oregon")
+  match "/about", :to => redirect("/massage-therapist-bend-oregon")
   
   # The priority is based upon order of creation:
   # first created -> highest priority.
