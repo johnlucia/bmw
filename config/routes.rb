@@ -2,6 +2,12 @@ Bmw::Application.routes.draw do
   
   # 301 redirect
   # match "/massage", :to => redirect("/massage-in-bend-oregon")
+  
+  # Deleted Pages
+  match "blog/a-community-of-inspiration", :to => redirect("/blog")
+  match "/massage/thai-yoga-massage", :to => redirect("/massage-bend-oregon")
+  
+  # Changed Page Names
   match "/massage/sports-massage", :to => redirect("/massage-bend-oregon/sports-massage")
   match "/massage/deep-tissue-massage", :to => redirect("/massage-bend-oregon/deep-tissue-massage")
   match "/massage/relaxation-massage", :to => redirect("/massage-bend-oregon/relaxation-massage")
