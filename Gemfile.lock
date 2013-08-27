@@ -79,6 +79,7 @@ GEM
     net-scp (1.0.4)
       net-ssh (>= 1.99.1)
     net-ssh (2.2.2)
+    newrelic_rpm (3.6.6.147)
     nokogiri (1.5.0)
     orm_adapter (0.0.5)
     pg (0.12.2)
@@ -192,6 +193,7 @@ PLATFORMS
 DEPENDENCIES
   aws-s3
   fog
+  newrelic_rpm
   pg
   rails (= 3.0.20)
   refinerycms (~> 1.0.9)
