@@ -121,7 +121,8 @@ a:hover{text-decoration:underline;}
 #nav li ul a{background:#666; font-size:.75em; text-transform:none; text-align:left;}
 #nav li ul a:hover{}
 #nav li ul li{float:none; width:200px; border-top:1px solid #290011;}
-#nav li:hover ul{left:auto}
+#nav li:hover ul,
+#nav li.open ul{left:auto}
 
 /* Homepage Slideshow */
 #gallery{
