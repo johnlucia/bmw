@@ -5,13 +5,8 @@ gem 'rails', '3.0.20'
 # Bundle edg Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-# sqlite3 locally, Postgresql on production
-group :development, :test do
-  gem 'sqlite3'
-end
-group :production do
-  gem 'pg'
-end
+# Postgresql on developmant and production
+gem 'pg'
 
 # Use unicorn as the web server
 # gem 'unicorn'

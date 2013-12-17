@@ -1,8 +1,17 @@
 # SQLite version 3.x
+# development:
+#   adapter: <%= "jdbc" if defined?(JRUBY_PLATFORM) %>sqlite3
+#   database: db/bmw_development.sqlite3
+#   timeout: 5000
+
+# Switching to Postgresql
 development:
-  adapter: <%= "jdbc" if defined?(JRUBY_PLATFORM) %>sqlite3
-  database: db/bmw_development.sqlite3
+  adapter: postgresql
+  database: bmw_development
+  pool: 5
   timeout: 5000
+
+# TOOD: Clean up these entries...
 
 # Warning: The database defined as 'test' will be erased and
 # re-generated from your development database when you run 'rake'.
